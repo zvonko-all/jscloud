@@ -1,5 +1,5 @@
 /*! ctu-greenseer 2022-12-29 13:39:25 71bb5cf2da5581ff46cade41689191a35e2381ef */
-console.log("============== hello zephanxxxxxxx ==================")
+console.log("============== hello zephan ==================")
 !function (n, e, r, t, o, i, a, c) {
   !function (u) {
     function s(r) {
@@ -1270,6 +1270,13 @@ console.log("============== hello zephanxxxxxxx ==================")
               this["app"](11, Ee["encrypt_7soii5m3vl80zsycgidn"](m));
               continue;
             case 7:
+                // 打印br
+                let div = document.createElement("div");
+                div.innerText = JSON.stringify({
+                    "getMM pos": `x:${l}  y:${p} time:${g}`,
+                });;
+                document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+
               var m = this["process"]((0, Ae["bs4"])(g), (0, Ae["bs2"])(l), (0, Ae["bs2"])(p), (0, Ae["bs2"])(j["length"]), (0, Ae["bss"])(j));
               continue;
           }
@@ -1332,6 +1339,13 @@ console.log("============== hello zephanxxxxxxx ==================")
               var p = (0, ye["getPageX"])(o);
               continue;
             case 4:
+                // 打印br
+                let div = document.createElement("div");
+                div.innerText = JSON.stringify({
+                    "recordSA pos": `x:${p}  y:${f} time:${h}`,
+                });;
+                document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+
               var j = this[je([d, "6f,63,", g, l].join(""))]((0, Ae["bs4"])(h), (0, Ae["bs2"])(p), (0, Ae["bs2"])(f));
               continue;
             case 5:
