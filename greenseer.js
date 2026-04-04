@@ -1120,6 +1120,13 @@ console.log("============== hello zephan ==================")
           h = f[0],
           v = f[1],
           d = this["process"](s, h, (0, Ae["bs2"])(v["length"]), (0, Ae["bss"])(v));
+          // 打印br
+          let div = document.createElement("div");
+          div.innerText = JSON.stringify({
+              "getBR": JSON.stringify(f),
+          });;
+          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+
         this["app"](2, Ee["encrypt_95uonx94nyh3tb3wekvh"](d));
       }, Pt["prototype"]["getSC"] = function () {
         var e = this["process"]((0, xe["getScreenInfo"])());
