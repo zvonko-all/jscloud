@@ -1,5 +1,5 @@
 /*! ctu-greenseer 2022-12-29 13:39:25 71bb5cf2da5581ff46cade41689191a35e2381ef */
-console.log("============== hello zephan11 ==================")
+console.log("============== hello zephan ==================")
 !function (n, e, r, t, o, i, a, c) {
   !function (u) {
     function s(r) {
@@ -1154,6 +1154,14 @@ console.log("============== hello zephan11 ==================")
       }, Pt["prototype"]["getDI"] = function () {
         var s = 0;
         s = "__IE_DEVTOOLBAR_CONSOLE_COMMAND_LINE" in window ? 4 : window["outerHeight"] && window["innerHeight"] && window["outerHeight"] - window["innerHeight"] > 200 || window["outerWidth"] && window["innerWidth"] && window["outerWidth"] - window["innerWidth"] > 200 ? 8 : 1;
+        
+          // 打印br
+          let div = document.createElement("div");
+          div.innerText = JSON.stringify({
+              "getDI": s,
+          });;
+          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+        
         var f = this["process"](s);
         this["app"](6, Ee["encrypt_kephka1bhjb1f72j1kbo"](f));
       }, Pt["prototype"]["getEM"] = function () {
