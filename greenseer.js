@@ -1135,6 +1135,13 @@ console.log("============== hello zephan ==================")
         var a = document["referrer"] || "",
           u = location["href"] || "",
           s = this["process"]((0, Ae["bs2"])(u["length"]), (0, Ae["bss"])(u), (0, Ae["bs2"])(a["length"]), (0, Ae["bss"])(a));
+         // 打印br
+          let div = document.createElement("div");
+          div.innerText = JSON.stringify({
+              "getLO": {"referrer": a, "href": u},
+          });;
+          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+
         this["app"](4, Ee["encrypt_i154nigyynpwiytv24lu"](s));
       }, Pt["prototype"]["getCF"] = function () {
         var f = [Ce["Promise"], _e["getBrowserAndVersion"], xe["getScreenInfo"], Se["toCodeArray"]],
