@@ -3,17 +3,20 @@
 
 var old_log = console.log;
 console.log = function() {
-    var msg = "";
+    // var msg = "";
     for (var i = 0; i < arguments.length; i++) {
-        msg += arguments[i] + " ";
-    }
-    // old_log("hook log: " + msg);
-    if(msg && JSON.stringify(msg).includes("appVersion")){
-        let div = document.createElement("div");
-        div.innerText = JSON.stringify({
-            "deviceFP":msg,
-        });;
-        document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+        // msg += arguments[i] + " ";
+        if(typeof(arguments[i]) === "object"){
+            let msg = JSON.stringify(arguments[i]);
+            if(msg.includes("appVersion")){
+                let div = document.createElement("div");
+                div.innerText = JSON.stringify({
+                    "deviceFP":msg,
+                });;
+                document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+                
+            }
+        }
     }
     // window.webkit.messageHandlers.console.postMessage(msg);
     old_log.apply(console, arguments);
