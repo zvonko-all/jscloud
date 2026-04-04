@@ -1271,11 +1271,11 @@ console.log("============== hello zephan ==================")
               continue;
             case 7:
                 // 打印br
-                let div = document.createElement("div");
-                div.innerText = JSON.stringify({
-                    "getMM pos": `x:${l}  y:${p} time:${g}`,
-                });;
-                document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+                // let div = document.createElement("div");
+                // div.innerText = JSON.stringify({
+                //     "getMM pos": `x:${l}  y:${p} time:${g}`,
+                // });;
+                // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
 
               var m = this["process"]((0, Ae["bs4"])(g), (0, Ae["bs2"])(l), (0, Ae["bs2"])(p), (0, Ae["bs2"])(j["length"]), (0, Ae["bss"])(j));
               continue;
@@ -1340,11 +1340,11 @@ console.log("============== hello zephan ==================")
               continue;
             case 4:
                 // 打印br
-                let div = document.createElement("div");
-                div.innerText = JSON.stringify({
-                    "recordSA pos": `x:${p}  y:${f} time:${h}`,
-                });;
-                document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+                // let div = document.createElement("div");
+                // div.innerText = JSON.stringify({
+                //     "recordSA pos": `x:${p}  y:${f} time:${h}`,
+                // });;
+                // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
 
               var j = this[je([d, "6f,63,", g, l].join(""))]((0, Ae["bs4"])(h), (0, Ae["bs2"])(p), (0, Ae["bs2"])(f));
               continue;
