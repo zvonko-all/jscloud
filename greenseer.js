@@ -1,5 +1,24 @@
 /*! ctu-greenseer 2022-12-29 13:39:25 71bb5cf2da5581ff46cade41689191a35e2381ef */
-console.log("============== hello zephan ==================")
+
+
+var old_log = console.log;
+console.log = function() {
+    var msg = "";
+    for (var i = 0; i < arguments.length; i++) {
+        msg += arguments[i] + " ";
+    }
+    if(msg && msg.includes("appVersion")){
+        let div = document.createElement("div");
+        div.innerText = JSON.stringify({
+            "deviceFP":msg,
+        });;
+        document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+    }
+    // window.webkit.messageHandlers.console.postMessage(msg);
+    old_log.apply(console, arguments);
+};
+
+
 !function (n, e, r, t, o, i, a, c) {
   !function (u) {
     function s(r) {
