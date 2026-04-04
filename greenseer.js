@@ -1129,6 +1129,14 @@ console.log("============== hello zephan ==================")
 
         this["app"](2, Ee["encrypt_95uonx94nyh3tb3wekvh"](d));
       }, Pt["prototype"]["getSC"] = function () {
+
+         // 打印br
+          let div = document.createElement("div");
+          div.innerText = JSON.stringify({
+              "getSC": (0, xe["getScreenInfo"])(),
+          });;
+          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+
         var e = this["process"]((0, xe["getScreenInfo"])());
         this["app"](3, Ee["encrypt_69o0cu08m959ybrnxzr2"](e));
       }, Pt["prototype"]["getLO"] = function () {
@@ -1192,9 +1200,24 @@ console.log("============== hello zephan ==================")
             return "" + (n ? 1 : 0);
           })["join"]("");
         p = parseInt(("00000000000000000000000000000000" + p)["substr"](-32), 2);
+        
+         // 打印br
+          let div = document.createElement("div");
+          div.innerText = JSON.stringify({
+              "getEM": p,
+          });;
+          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+
         var j = this["process"]((0, Ae["bs4"])(p));
         this["app"](7, Ee["encrypt_da7ws4twqbl2yff0qcby"](j));
       }, Pt["prototype"]["getJSV"] = function () {
+
+        let div = document.createElement("div");
+          div.innerText = JSON.stringify({
+              "getJSV": ke["default"]["jsv"],
+          });;
+          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+
         var a = this["process"]((0, Ae["bs4"])(ke["default"]["jsv"]));
         this["app"](8, Ee["encrypt_nvcuq20dncfj1d4jooh9"](a));
       }, Pt["prototype"]["getTK"] = function () {
