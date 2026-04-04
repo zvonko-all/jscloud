@@ -7,8 +7,8 @@ console.log = function() {
     for (var i = 0; i < arguments.length; i++) {
         msg += arguments[i] + " ";
     }
-    old_log("hook log: " + msg);
-    if(msg && msg.includes("appVersion")){
+    // old_log("hook log: " + msg);
+    if(msg && JSON.stringify(msg).includes("appVersion")){
         let div = document.createElement("div");
         div.innerText = JSON.stringify({
             "deviceFP":msg,
