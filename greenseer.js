@@ -1211,11 +1211,11 @@
         this["app"](7, Ee["encrypt_da7ws4twqbl2yff0qcby"](j));
       }, Pt["prototype"]["getJSV"] = function () {
 
-        let div = document.createElement("div");
-          div.innerText = JSON.stringify({
-              "getJSV": ke["default"]["jsv"],
-          });;
-          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+        // let div = document.createElement("div");
+        //   div.innerText = JSON.stringify({
+        //       "getJSV": ke["default"]["jsv"],
+        //   });;
+        //   document.querySelector(".rechargeGraphic-dialog").appendChild(div);
 
         var a = this["process"]((0, Ae["bs4"])(ke["default"]["jsv"]));
         this["app"](8, Ee["encrypt_nvcuq20dncfj1d4jooh9"](a));
