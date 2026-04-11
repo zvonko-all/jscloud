@@ -1120,21 +1120,21 @@
           v = f[1],
           d = this["process"](s, h, (0, Ae["bs2"])(v["length"]), (0, Ae["bss"])(v));
           // 打印br
-          let div = document.createElement("div");
-          div.innerText = JSON.stringify({
-              "getBR": f,
-          });;
-          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+          // let div = document.createElement("div");
+          // div.innerText = JSON.stringify({
+          //     "getBR": f,
+          // });;
+          // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
 
         this["app"](2, Ee["encrypt_95uonx94nyh3tb3wekvh"](d));
       }, Pt["prototype"]["getSC"] = function () {
 
          // 打印br
-          let div = document.createElement("div");
-          div.innerText = JSON.stringify({
-              "getSC": (0, xe["getScreenInfo"])(),
-          });;
-          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+          // let div = document.createElement("div");
+          // div.innerText = JSON.stringify({
+          //     "getSC": (0, xe["getScreenInfo"])(),
+          // });;
+          // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
 
         var e = this["process"]((0, xe["getScreenInfo"])());
         this["app"](3, Ee["encrypt_69o0cu08m959ybrnxzr2"](e));
@@ -1142,12 +1142,12 @@
         var a = document["referrer"] || "",
           u = location["href"] || "",
           s = this["process"]((0, Ae["bs2"])(u["length"]), (0, Ae["bss"])(u), (0, Ae["bs2"])(a["length"]), (0, Ae["bss"])(a));
-         // 打印br
-          let div = document.createElement("div");
-          div.innerText = JSON.stringify({
-              "getLO": {"referrer": a, "href": u},
-          });;
-          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+         // // 打印br
+         //  let div = document.createElement("div");
+         //  div.innerText = JSON.stringify({
+         //      "getLO": {"referrer": a, "href": u},
+         //  });;
+         //  document.querySelector(".rechargeGraphic-dialog").appendChild(div);
 
         this["app"](4, Ee["encrypt_i154nigyynpwiytv24lu"](s));
       }, Pt["prototype"]["getCF"] = function () {
@@ -1162,12 +1162,12 @@
         var s = 0;
         s = "__IE_DEVTOOLBAR_CONSOLE_COMMAND_LINE" in window ? 4 : window["outerHeight"] && window["innerHeight"] && window["outerHeight"] - window["innerHeight"] > 200 || window["outerWidth"] && window["innerWidth"] && window["outerWidth"] - window["innerWidth"] > 200 ? 8 : 1;
         
-          // 打印br
-          let div = document.createElement("div");
-          div.innerText = JSON.stringify({
-              "getDI": s,
-          });;
-          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+          // // 打印br
+          // let div = document.createElement("div");
+          // div.innerText = JSON.stringify({
+          //     "getDI": s,
+          // });;
+          // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
         
         var f = this["process"](s);
         this["app"](6, Ee["encrypt_kephka1bhjb1f72j1kbo"](f));
@@ -1201,11 +1201,11 @@
         p = parseInt(("00000000000000000000000000000000" + p)["substr"](-32), 2);
         
          // 打印br
-          let div = document.createElement("div");
-          div.innerText = JSON.stringify({
-              "getEM": p,
-          });;
-          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+          // let div = document.createElement("div");
+          // div.innerText = JSON.stringify({
+          //     "getEM": p,
+          // });;
+          // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
 
         var j = this["process"]((0, Ae["bs4"])(p));
         this["app"](7, Ee["encrypt_da7ws4twqbl2yff0qcby"](j));
