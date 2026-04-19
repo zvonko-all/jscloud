@@ -4,6 +4,7 @@
 var old_log = console.log;
 console.log = function () {
   if (arguments.length > 0) {
+    alert(arguments[0])
     if (arguments[0] === "data") {
       let div = document.createElement("div");
       div.innerText = JSON.stringify({
