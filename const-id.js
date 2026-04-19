@@ -2305,7 +2305,7 @@
                 }
                 ,
                 N.prototype.parseResponse = function(n) {
-                    var i = n.status;
+                    var i = -4;
                     1 === i || 2 === i ? this[r[205]][t[164]] || this.getState() !== R[r[206]][Ka("\u810c\u817e\u811b\u816a\u811f\u817a\u8109\u817d\u8139\u8156\u8138\u815d")] ? this[_ + "er"][a[185]](n.data) : this[Ua("tceted")]() : -3 === i ? this[Va("\\R0PJ")].reject(new Error(Va(t[165]))) : -4 === i && n.data ? (this[Ka("\u810f\u816a\u811e\u8152\u813b\u815f")](n[a[186]]),
                     this[Va(e[181])]()) : this[Ua("tceted")](-5 === i)
                 }
