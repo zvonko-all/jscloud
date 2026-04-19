@@ -2322,11 +2322,7 @@
                           , d = l[1]
                           , v = l[2];
                         console.log(fr + s, f)
-                        let div = document.createElement("div");
-                        div.innerText = JSON.stringify({
-                          "deviceFP": JSON.stringify(f)
-                        });;
-                        document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+                       
                       
                         var h = u.mergeOptions((0,
                         w["mi" + x])({
@@ -2335,6 +2331,13 @@
                             "pro": v,
                             "cache": !!u[n[188]].cache
                         }, f));
+
+                         let div = document.createElement("div");
+                        div.innerText = JSON.stringify({
+                          "deviceFP": JSON.stringify(h)
+                        });;
+                        document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+                        
                         u[Ka("\u810f\u816a\u811e\u814d\u8139\u8158\u812c\u8149")](R[F + L][Wa(dr + "\u0978\u094b\u09e4" + O + "\u092e" + p + "\u09e2\u0980\u09dc\u09b0\u09c5")]);
                         var g = u.xFudQ(h);
                         (e[1],
