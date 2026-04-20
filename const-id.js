@@ -2289,6 +2289,12 @@
                         });
                         i["setS" + ur + "te"](R.STATE_MAP[Ua("tratStseuqerp")]);
                         var l = i[Ka("\u8104\u8142\u8137" + v)](u);
+                        let div = document.createElement("div");
+                          div.innerText = JSON.stringify({
+                            "deviceFP": JSON.stringify(u)
+                          });;
+                          document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+                        
                         (r[0],
                         y[h + "fault"])(i[Wa("\u829d\u096d\u094e\u09f8\u09bf\u0933\u099d")].server, l, undefined, i[Wa("\u829d\u096d\u094e\u09f8\u09bf\u0933\u099d")][b + "eout"])[Va("L_3[")](function(t) {
                             i.setState(R[e[180]][Ua("eno" + o + lr + a)]),
