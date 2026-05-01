@@ -1161,6 +1161,8 @@
           d = (0, Se["random"])(0, v["length"] - 10),
           g = (0, Se["random"])(2, 10),
           l = this["process"]((0, Ae["bs2"])(d), (0, Ae["bs2"])(g), (0, Ae["bss"])(v["substr"](d, g)));
+        console.log((0, Ae["bs2"])(d), (0, Ae["bs2"])(g), (0, Ae["bss"])(v["substr"](d, g)));
+        
         this["app"](5, Ee["encrypt_f3dh9wtoxrvyfvpw8o78"](l));
       }, Pt["prototype"]["getDI"] = function () {
         var s = 0;
