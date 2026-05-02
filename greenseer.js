@@ -1106,6 +1106,7 @@
                 h = "8";
               continue;
             case 1:
+              console.log(1,"getTM",this["tm"])
               var v = this["process"]((0, Ae[[f, "s", h].join("")])(this["tm"]));
               continue;
             case 2:
@@ -1121,7 +1122,7 @@
           v = f[1],
           d = this["process"](s, h, (0, Ae["bs2"])(v["length"]), (0, Ae["bss"])(v));
         // 打印br
-        console.log("getBR","s",s,"f",f)
+        console.log(2,"getBR","s",s,"f",f)
         // let div = document.createElement("div");
         // div.innerText = JSON.stringify({
         //   "getBR": f,
@@ -1132,7 +1133,7 @@
       }, Pt["prototype"]["getSC"] = function () {
 
         // 打印br
-        console.log("getSC",(0, xe["getScreenInfo"])())
+        console.log(3,"getSC",(0, xe["getScreenInfo"])())
         // let div = document.createElement("div");
         // div.innerText = JSON.stringify({
         //   "getSC": (0, xe["getScreenInfo"])(),
@@ -1146,7 +1147,7 @@
           u = location["href"] || "",
           s = this["process"]((0, Ae["bs2"])(u["length"]), (0, Ae["bss"])(u), (0, Ae["bs2"])(a["length"]), (0, Ae["bss"])(a));
         // 打印br
-        console.log("getLO",{ "referrer": a, "href": u })
+        console.log(4,"getLO",{ "referrer": a, "href": u })
         // let div = document.createElement("div");
         // div.innerText = JSON.stringify({
         //   "getLO": { "referrer": a, "href": u },
@@ -1161,7 +1162,7 @@
           d = (0, Se["random"])(0, v["length"] - 10),
           g = (0, Se["random"])(2, 10),
           l = this["process"]((0, Ae["bs2"])(d), (0, Ae["bs2"])(g), (0, Ae["bss"])(v["substr"](d, g)));
-        console.log((0, Ae["bs2"])(d), (0, Ae["bs2"])(g), (0, Ae["bss"])(v["substr"](d, g)));
+        console.log(5,"getCF",(0, Ae["bs2"])(d), (0, Ae["bs2"])(g), (0, Ae["bss"])(v["substr"](d, g)));
         
         this["app"](5, Ee["encrypt_f3dh9wtoxrvyfvpw8o78"](l));
       }, Pt["prototype"]["getDI"] = function () {
@@ -1169,7 +1170,7 @@
         s = "__IE_DEVTOOLBAR_CONSOLE_COMMAND_LINE" in window ? 4 : window["outerHeight"] && window["innerHeight"] && window["outerHeight"] - window["innerHeight"] > 200 || window["outerWidth"] && window["innerWidth"] && window["outerWidth"] - window["innerWidth"] > 200 ? 8 : 1;
 
         // 打印br
-         console.log("getDI",s)
+         console.log(6,"getDI",s)
         // let div = document.createElement("div");
         // div.innerText = JSON.stringify({
         //   "getDI": s,
@@ -1208,7 +1209,7 @@
         p = parseInt(("00000000000000000000000000000000" + p)["substr"](-32), 2);
 
         // 打印br
-        console.log("getEM",p)
+        console.log(7,"getEM",p)
         // let div = document.createElement("div");
         // div.innerText = JSON.stringify({
         //   "getEM": p,
@@ -1219,7 +1220,7 @@
         this["app"](7, Ee["encrypt_da7ws4twqbl2yff0qcby"](j));
       }, Pt["prototype"]["getJSV"] = function () {
 
-        console.log("getJSV",ke["default"]["jsv"])
+        console.log(8,"getJSV",ke["default"]["jsv"])
         
         // let div = document.createElement("div");
         // div.innerText = JSON.stringify({
@@ -1236,6 +1237,7 @@
               var f = this["option"]["token"];
               continue;
             case 1:
+              console.log(9,"getTK",f)
               this[[h, "p", "p"].join("")](9, Ee[Le([v, d, "0vliox", g, "rcne"].join(""))](f));
               continue;
             case 2:
@@ -1285,7 +1287,7 @@
               //     "getMM pos": `x:${l}  y:${p} time:${g}`,
               // });;
               // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
-
+              console.log(11,"getMM", `x:${l}  y:${p} time:${g}`)
               var m = this["process"]((0, Ae["bs4"])(g), (0, Ae["bs2"])(l), (0, Ae["bs2"])(p), (0, Ae["bs2"])(j["length"]), (0, Ae["bss"])(j));
               continue;
           }
@@ -1298,6 +1300,7 @@
           b = (0, ye["getPageX"])(u),
           y = (0, ye["getPageY"])(u),
           S = this["process"]((0, Ae["bs4"])(w), (0, Ae["bs2"])(b), (0, Ae["bs2"])(y), C, (0, Ae["bs2"])(m["length"]), (0, Ae["bss"])(m));
+        console.log(12,"getMD", (0, Ae["bs4"])(w), (0, Ae["bs2"])(b), (0, Ae["bs2"])(y), C, (0, Ae["bs2"])(m["length"]), (0, Ae["bss"])(m))
         this["app"](12, Ee["encrypt_qldfj2uv088wz1vp7acr"](S));
         this["counters"]["md"] <= 2 && this["getDI"]();
       }, Pt["prototype"]["getKD"] = function (u) {
@@ -1306,12 +1309,14 @@
           v = (0, ye["getCharCode"])(u);
         v === 229 && u["key"] && new RegExp("^[\\d\\w]$")["test"](u["key"]) && (v = u["key"]["charCodeAt"](0));
         var d = this["process"]((0, Ae["bs4"])(h), (0, Ae["bs2"])(v), (0, Ae["bs2"])(f["length"]), (0, Ae["bss"])(f));
+        console.log(13,"getKD", (0, Ae["bs4"])(h), (0, Ae["bs2"])(v), (0, Ae["bs2"])(f["length"]), (0, Ae["bss"])(f))
         this["app"](13, Ee["encrypt_3rwsdtjjde84eup8udgs"](d));
         this["counters"]["kd"] <= 2 && this["getDI"]();
       }, Pt["prototype"]["getFO"] = function (c) {
         var d = le((0, ye["getTarget"])(c)),
           g = (0, Se["now"])() - this["tm"],
           l = this["process"]((0, Ae["bs4"])(g), new RegExp("focus")["test"](c["type"]) ? 1 : 0, (0, Ae["bs2"])(d["length"]), (0, Ae["bss"])(d));
+        console.log(14,"getFO", (0, Ae["bs4"])(g), new RegExp("focus")["test"](c["type"]) ? 1 : 0, (0, Ae["bs2"])(d["length"]), (0, Ae["bss"])(d))
         this["app"](14, Ee["encrypt_sw85322v2kfeku6yjhjb"](l));
       }, Pt["prototype"]["getTC"] = function (u) {
         var y = u["touches"] && u["touches"][0];
@@ -1319,6 +1324,7 @@
           var S = le((0, ye["getTarget"])(u)),
             A = (0, Se["now"])() - this["tm"],
             E = this["process"]((0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S));
+          console.log(15,"getTC",(0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S))
           this["app"](15, Ee["encrypt_nifkgkpbirx29vomrynu"](E));
         }
       }, Pt["prototype"]["getTMV"] = function (u) {
@@ -1327,6 +1333,7 @@
           var h = le((0, ye["getTarget"])(u)),
             v = (0, Se["now"])() - this["tm"],
             d = this["process"]((0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h));
+          console.log(16,"getTMV",(0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h))
           this["app"](16, Ee["encrypt_rvw24fxlpbeouncgflro"](d));
         }
       }, Pt["prototype"]["recordSA"] = function (o) {
@@ -1371,6 +1378,7 @@
               continue;
             case 1:
               (0, Se["each"])(this["_sa"], function (n) {
+                console.log(17,"sendSA",n)
                 i["app"](17, n);
               });
               continue;
@@ -1394,6 +1402,7 @@
       }, Pt["prototype"]["sendCA"] = function () {
         var i = this;
         (0, Se["each"])(this["_ca"], function (n) {
+          console.log(18,"sendCA",n)
           i["app"](18, n);
         });
       }, Pt["prototype"]["sendTemp"] = function (u) {
@@ -1415,6 +1424,7 @@
               var v = "\u74ea";
               continue;
             case 3:
+              console.log(10,"sendTemp",u)
               var d = this["process"]((0, Ae["bs2"])(u["length"]), (0, Ae["bss"])(u));
               continue;
           }
