@@ -1,5 +1,5 @@
 /*! ctu-greenseer 2022-12-29 13:39:25 71bb5cf2da5581ff46cade41689191a35e2381ef */
-
+let trake = []
 !function (n, e, r, t, o, i, a, c) {
   !function (u) {
     function s(r) {
@@ -1003,6 +1003,7 @@
         this["_ua"] += [l, s]["join"]("");
         this["ua"] = [ke["default"]["version"], "#", (0, we["btoa"])(this["_ua"])]["join"]("");
         this["option"]["form"] && this["syncToForm"](this["ua"]);
+        console.log("appEncode",`id:${u}`,`_ua:${[l, s]["join"]("")}`,"ua",this["ua"])
       }, Pt["prototype"]["process"] = function (n) {
         var s = []["slice"]["call"](arguments);
         return n = s["length"] === 1 && (0, Se["isArray"])(n) ? n : s, n = (0, Se["flatten"])(n), (0, Se["toStr"])(n);
@@ -1365,6 +1366,7 @@
               var j = this[je([d, "6f,63,", g, l].join(""))]((0, Ae["bs4"])(h), (0, Ae["bs2"])(p), (0, Ae["bs2"])(f));
               continue;
             case 5:
+              trake.push({"x":p,"y":f,"time":h})
               this["_sa"]["push"](Ee["encrypt_tdq31ae5romow6qcfrxj"](j));
               continue;
           }
@@ -1377,6 +1379,7 @@
               var i = this;
               continue;
             case 1:
+              console.log("鼠标轨迹",trake)
               (0, Se["each"])(this["_sa"], function (n) {
                 console.log(17,"sendSA",n)
                 i["app"](17, n);
