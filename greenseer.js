@@ -1319,23 +1319,23 @@
         console.log(14,"getFO", (0, Ae["bs4"])(g), new RegExp("focus")["test"](c["type"]) ? 1 : 0, (0, Ae["bs2"])(d["length"]), (0, Ae["bss"])(d))
         this["app"](14, Ee["encrypt_sw85322v2kfeku6yjhjb"](l));
       }, Pt["prototype"]["getTC"] = function (u) {
-        var y = u["touches"] && u["touches"][0];
-        if (y) {
-          var S = le((0, ye["getTarget"])(u)),
-            A = (0, Se["now"])() - this["tm"],
-            E = this["process"]((0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S));
-          console.log(15,"getTC",(0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S))
-          this["app"](15, Ee["encrypt_nifkgkpbirx29vomrynu"](E));
-        }
+        // var y = u["touches"] && u["touches"][0];
+        // if (y) {
+        //   var S = le((0, ye["getTarget"])(u)),
+        //     A = (0, Se["now"])() - this["tm"],
+        //     E = this["process"]((0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S));
+        //   console.log(15,"getTC",(0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S))
+        //   this["app"](15, Ee["encrypt_nifkgkpbirx29vomrynu"](E));
+        // }
       }, Pt["prototype"]["getTMV"] = function (u) {
-        var f = u["touches"] && u["touches"][0];
-        if (f) {
-          var h = le((0, ye["getTarget"])(u)),
-            v = (0, Se["now"])() - this["tm"],
-            d = this["process"]((0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h));
-          console.log(16,"getTMV",(0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h))
-          this["app"](16, Ee["encrypt_rvw24fxlpbeouncgflro"](d));
-        }
+        // var f = u["touches"] && u["touches"][0];
+        // if (f) {
+        //   var h = le((0, ye["getTarget"])(u)),
+        //     v = (0, Se["now"])() - this["tm"],
+        //     d = this["process"]((0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h));
+        //   console.log(16,"getTMV",(0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h))
+        //   this["app"](16, Ee["encrypt_rvw24fxlpbeouncgflro"](d));
+        // }
       }, Pt["prototype"]["recordSA"] = function (o) {
         for (var u = [2, 1, 3, 0, 4, 5], s = 0; true;) {
           switch (u[s++]) {
