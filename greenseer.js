@@ -1,6 +1,5 @@
 /*! ctu-greenseer 2022-12-29 13:39:25 71bb5cf2da5581ff46cade41689191a35e2381ef */
-let trake = []
-  
+
 !function (n, e, r, t, o, i, a, c) {
   !function (u) {
     function s(r) {
@@ -1004,7 +1003,6 @@ let trake = []
         this["_ua"] += [l, s]["join"]("");
         this["ua"] = [ke["default"]["version"], "#", (0, we["btoa"])(this["_ua"])]["join"]("");
         this["option"]["form"] && this["syncToForm"](this["ua"]);
-        console.log("appEncode",`id:${u}`,`_ua:${[l, s]["join"]("")}`,"ua",this["ua"])
       }, Pt["prototype"]["process"] = function (n) {
         var s = []["slice"]["call"](arguments);
         return n = s["length"] === 1 && (0, Se["isArray"])(n) ? n : s, n = (0, Se["flatten"])(n), (0, Se["toStr"])(n);
@@ -1321,14 +1319,14 @@ let trake = []
         console.log(14,"getFO", (0, Ae["bs4"])(g), new RegExp("focus")["test"](c["type"]) ? 1 : 0, (0, Ae["bs2"])(d["length"]), (0, Ae["bss"])(d))
         this["app"](14, Ee["encrypt_sw85322v2kfeku6yjhjb"](l));
       }, Pt["prototype"]["getTC"] = function (u) {
-        // var y = u["touches"] && u["touches"][0];
-        // if (y) {
-        //   var S = le((0, ye["getTarget"])(u)),
-        //     A = (0, Se["now"])() - this["tm"],
-        //     E = this["process"]((0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S));
-        //   console.log(15,"getTC",(0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S))
-        //   this["app"](15, Ee["encrypt_nifkgkpbirx29vomrynu"](E));
-        // }
+        var y = u["touches"] && u["touches"][0];
+        if (y) {
+          var S = le((0, ye["getTarget"])(u)),
+            A = (0, Se["now"])() - this["tm"],
+            E = this["process"]((0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S));
+          console.log(15,"getTC",(0, Ae["bs4"])(A), (0, Ae["bs2"])(parseInt(y["pageX"] || 0)), (0, Ae["bs2"])(parseInt(y["pageY"] || 0)), (0, Ae["bs4"])(y["identifier"] || 0), (0, Ae["bs2"])(S["length"]), (0, Ae["bss"])(S))
+          this["app"](15, Ee["encrypt_nifkgkpbirx29vomrynu"](E));
+        }
       }, Pt["prototype"]["getTMV"] = function (u) {
         // var f = u["touches"] && u["touches"][0];
         // if (f) {
@@ -1367,7 +1365,6 @@ let trake = []
               var j = this[je([d, "6f,63,", g, l].join(""))]((0, Ae["bs4"])(h), (0, Ae["bs2"])(p), (0, Ae["bs2"])(f));
               continue;
             case 5:
-              trake.push({"x":p,"y":f,"time":h})
               this["_sa"]["push"](Ee["encrypt_tdq31ae5romow6qcfrxj"](j));
               continue;
           }
@@ -1380,7 +1377,6 @@ let trake = []
               var i = this;
               continue;
             case 1:
-              console.log("鼠标轨迹",trake)
               (0, Se["each"])(this["_sa"], function (n) {
                 console.log(17,"sendSA",n)
                 i["app"](17, n);
