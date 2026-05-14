@@ -1328,14 +1328,14 @@
           this["app"](15, Ee["encrypt_nifkgkpbirx29vomrynu"](E));
         }
       }, Pt["prototype"]["getTMV"] = function (u) {
-        // var f = u["touches"] && u["touches"][0];
-        // if (f) {
-        //   var h = le((0, ye["getTarget"])(u)),
-        //     v = (0, Se["now"])() - this["tm"],
-        //     d = this["process"]((0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h));
-        //   console.log(16,"getTMV",(0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h))
-        //   this["app"](16, Ee["encrypt_rvw24fxlpbeouncgflro"](d));
-        // }
+        var f = u["touches"] && u["touches"][0];
+        if (f) {
+          var h = le((0, ye["getTarget"])(u)),
+            v = (0, Se["now"])() - this["tm"],
+            d = this["process"]((0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h));
+          console.log(16,"getTMV",(0, Ae["bs4"])(v), (0, Ae["bs2"])(parseInt(f["pageX"] || 0)), (0, Ae["bs2"])(parseInt(f["pageY"] || 0)), (0, Ae["bs4"])(f["identifier"] || 0), (0, Ae["bs2"])(h["length"]), (0, Ae["bss"])(h))
+          this["app"](16, Ee["encrypt_rvw24fxlpbeouncgflro"](d));
+        }
       }, Pt["prototype"]["recordSA"] = function (o) {
         for (var u = [2, 1, 3, 0, 4, 5], s = 0; true;) {
           switch (u[s++]) {
