@@ -1003,7 +1003,7 @@
         this["_ua"] += [l, s]["join"]("");
         this["ua"] = [ke["default"]["version"], "#", (0, we["btoa"])(this["_ua"])]["join"]("");
         this["option"]["form"] && this["syncToForm"](this["ua"]);
-        console.log("app","id",u,"encData",s,"encDatalength",s.length,"_ua",[l, s]["join"](""))
+        // console.log("app","id",u,"encData",s,"encDatalength",s.length,"_ua",[l, s]["join"](""))
       }, Pt["prototype"]["process"] = function (n) {
         var s = []["slice"]["call"](arguments);
         return n = s["length"] === 1 && (0, Se["isArray"])(n) ? n : s, n = (0, Se["flatten"])(n), (0, Se["toStr"])(n);
@@ -1110,6 +1110,7 @@
               var v = this["process"]((0, Ae[[f, "s", h].join("")])(this["tm"]));
               continue;
             case 2:
+              console.log(1,"getTM",this["tm"])
               this["app"](1, Ee["encrypt_drtwbrcm1jo72vx0nr3h"](v));
               continue;
           }
@@ -1127,7 +1128,7 @@
         //   "getBR": f,
         // });;
         // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
-        console.log(2,f)
+        console.log(2,"getOS",f)
         this["app"](2, Ee["encrypt_95uonx94nyh3tb3wekvh"](d));
       }, Pt["prototype"]["getSC"] = function () {
 
@@ -1137,7 +1138,7 @@
         //   "getSC": (0, xe["getScreenInfo"])(),
         // });;
         // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
-        console.log(3,(0, xe["getScreenInfo"])())
+        console.log(3,"getSC",(0, xe["getScreenInfo"])())
         var e = this["process"]((0, xe["getScreenInfo"])());
         this["app"](3, Ee["encrypt_69o0cu08m959ybrnxzr2"](e));
       }, Pt["prototype"]["getLO"] = function () {
@@ -1150,7 +1151,7 @@
         //   "getLO": { "referrer": a, "href": u },
         // });;
         // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
-        console.log(4,{ "referrer": a, "href": u })
+        console.log(4,"getLO",{ "referrer": a, "href": u })
         this["app"](4, Ee["encrypt_i154nigyynpwiytv24lu"](s));
       }, Pt["prototype"]["getCF"] = function () {
         var f = [Ce["Promise"], _e["getBrowserAndVersion"], xe["getScreenInfo"], Se["toCodeArray"]],
@@ -1159,7 +1160,7 @@
           d = (0, Se["random"])(0, v["length"] - 10),
           g = (0, Se["random"])(2, 10),
           l = this["process"]((0, Ae["bs2"])(d), (0, Ae["bs2"])(g), (0, Ae["bss"])(v["substr"](d, g)));
-        console.log(5,d,g)
+        console.log(5,"getCF",d,g)
         this["app"](5, Ee["encrypt_f3dh9wtoxrvyfvpw8o78"](l));
       }, Pt["prototype"]["getDI"] = function () {
         var s = 0;
@@ -1171,7 +1172,7 @@
         //   "getDI": s,
         // });;
         // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
-        console.log(6,s)
+        console.log(6,"getDI",s)
         var f = this["process"](s);
         this["app"](6, Ee["encrypt_kephka1bhjb1f72j1kbo"](f));
       }, Pt["prototype"]["getEM"] = function () {
@@ -1209,7 +1210,7 @@
         //   "getEM": p,
         // });;
         // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
-        console.log(7,p)
+        console.log(7,"getEM",p)
         var j = this["process"]((0, Ae["bs4"])(p));
         this["app"](7, Ee["encrypt_da7ws4twqbl2yff0qcby"](j));
       }, Pt["prototype"]["getJSV"] = function () {
@@ -1219,7 +1220,7 @@
         //   "getJSV": ke["default"]["jsv"],
         // });;
         // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
-        console.log(8,(0, Ae["bs4"])(ke["default"]["jsv"]))
+        console.log(8,"getJSV",(0, Ae["bs4"])(ke["default"]["jsv"]))
         var a = this["process"]((0, Ae["bs4"])(ke["default"]["jsv"]));
         this["app"](8, Ee["encrypt_nvcuq20dncfj1d4jooh9"](a));
       }, Pt["prototype"]["getTK"] = function () {
@@ -1229,7 +1230,7 @@
               var f = this["option"]["token"];
               continue;
             case 1:
-              console.log(9,f)
+              console.log(9,"getTK",f)
               this[[h, "p", "p"].join("")](9, Ee[Le([v, d, "0vliox", g, "rcne"].join(""))](f));
               continue;
             case 2:
@@ -1279,7 +1280,7 @@
               //     "getMM pos": `x:${l}  y:${p} time:${g}`,
               // });;
               // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
-              console.log(11,`x:${l}  y:${p} time:${g}`)
+              console.log(11,"getMM",`x:${l}  y:${p} time:${g}`)
               var m = this["process"]((0, Ae["bs4"])(g), (0, Ae["bs2"])(l), (0, Ae["bs2"])(p), (0, Ae["bs2"])(j["length"]), (0, Ae["bss"])(j));
               continue;
           }
@@ -1292,7 +1293,7 @@
           b = (0, ye["getPageX"])(u),
           y = (0, ye["getPageY"])(u),
           S = this["process"]((0, Ae["bs4"])(w), (0, Ae["bs2"])(b), (0, Ae["bs2"])(y), C, (0, Ae["bs2"])(m["length"]), (0, Ae["bss"])(m));
-        console.log(12,`x:${b}  y:${y} time:${w}`)
+        console.log(12,"getMD",`x:${b}  y:${y} time:${w}`)
         this["app"](12, Ee["encrypt_qldfj2uv088wz1vp7acr"](S));
         this["counters"]["md"] <= 2 && this["getDI"]();
       }, Pt["prototype"]["getKD"] = function (u) {
@@ -1411,7 +1412,7 @@
               var v = "\u74ea";
               continue;
             case 3:
-              console.log(10,u)
+              console.log(10,"sendTemp",u)
               var d = this["process"]((0, Ae["bs2"])(u["length"]), (0, Ae["bss"])(u));
               continue;
           }
