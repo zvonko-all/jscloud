@@ -1,5 +1,5 @@
 /*! ctu-greenseer 2022-12-29 13:39:25 71bb5cf2da5581ff46cade41689191a35e2381ef */
-
+let traker = []
 !function (n, e, r, t, o, i, a, c) {
   !function (u) {
     function s(r) {
@@ -1138,6 +1138,7 @@
         //   "getSC": (0, xe["getScreenInfo"])(),
         // });;
         // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
+        traker = []
         console.log(3,"getSC",(0, xe["getScreenInfo"])())
         var e = this["process"]((0, xe["getScreenInfo"])());
         this["app"](3, Ee["encrypt_69o0cu08m959ybrnxzr2"](e));
@@ -1160,7 +1161,7 @@
           d = (0, Se["random"])(0, v["length"] - 10),
           g = (0, Se["random"])(2, 10),
           l = this["process"]((0, Ae["bs2"])(d), (0, Ae["bs2"])(g), (0, Ae["bss"])(v["substr"](d, g)));
-        console.log(5,"getCF",d,g)
+        console.log(5,"getCF",d,g,v)
         this["app"](5, Ee["encrypt_f3dh9wtoxrvyfvpw8o78"](l));
       }, Pt["prototype"]["getDI"] = function () {
         var s = 0;
@@ -1220,7 +1221,7 @@
         //   "getJSV": ke["default"]["jsv"],
         // });;
         // document.querySelector(".rechargeGraphic-dialog").appendChild(div);
-        console.log(8,"getJSV",(0, Ae["bs4"])(ke["default"]["jsv"]))
+        console.log(8,"getJSV",ke["default"]["jsv"])
         var a = this["process"]((0, Ae["bs4"])(ke["default"]["jsv"]));
         this["app"](8, Ee["encrypt_nvcuq20dncfj1d4jooh9"](a));
       }, Pt["prototype"]["getTK"] = function () {
@@ -1355,6 +1356,7 @@
               continue;
             case 5:
               console.log(`x:${p}  y:${f} time:${h}`)
+              traker.push({"x":p,"y":f,"time":h})
               this["_sa"]["push"](Ee["encrypt_tdq31ae5romow6qcfrxj"](j));
               continue;
           }
@@ -1412,6 +1414,7 @@
               var v = "\u74ea";
               continue;
             case 3:
+              console.log(JSON.stringify(traker))
               console.log(10,"sendTemp",u)
               var d = this["process"]((0, Ae["bs2"])(u["length"]), (0, Ae["bss"])(u));
               continue;
